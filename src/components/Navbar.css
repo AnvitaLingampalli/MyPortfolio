@@ -1,0 +1,155 @@
+.header{
+    top: 0;
+    z-index: 9999999;
+    background-color: #1F2937; 
+}
+
+.navContainer{
+    display: flex; 
+    padding: 1.25rem; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-items: baseline;
+    justify-content: right;
+}
+
+
+.navLink{
+    margin-bottom: 1rem; 
+    color: #ffffff; 
+    font-weight: 500; 
+}
+
+.me{
+    margin-left: 0.75rem; 
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+    text-decoration: none;
+    color: lightgray;
+}
+/* rgb(248, 135, 135) */
+
+.onlyB{
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.nav{
+    display: flex; 
+    font-size: 1rem;
+    line-height: 1.5rem; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.navButtons{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+    color: lightgrey;
+}
+
+.navButtons:hover{
+    color: rgb(239, 151, 151);
+}
+
+@media(min-width: 768px){
+    .header{
+      position: sticky;
+    }
+    .navContainer{
+      flex-direction: row;
+    }
+    .navLink{
+      margin-bottom: 0;
+    }
+    .nav{
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem; 
+      padding-left: 1rem; 
+      margin-left: 1rem; 
+      border-left-width: 1px; 
+    }
+    .contactLink{
+      margin-top: 0; 
+    }
+}
+
+.contactLink{
+  display: inline-flex; 
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem; 
+  padding-left: 0.75rem;
+  padding-right: 0.75rem; 
+  /* margin-top: 1rem;  */
+  background-color: #1F2937; 
+  font-size: 1rem;
+  line-height: 1.5rem; 
+  align-items: center; 
+  border-radius: 0.25rem; 
+  border-width: 0; 
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.contactLink:hover{
+  background-color: #374151; 
+}
+
+.hireButton{
+  margin-left: 0.25rem; 
+  width: 1rem; 
+  height: 1rem;
+
+}
+
+.menuNav{
+  display: inline-flex;
+  margin-left: auto;
+}
+.menuicon{
+    display: none;
+}
+
+@media screen and (min-width: 601px) {
+  .navContainer.responsive {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  /* .navContainer a:not(:first-child){display: none;}
+  .nav{
+    display: none;
+  }  */
+  .menuicon{
+    margin-left: 0.25rem; 
+    width: 2rem; 
+    height: 2rem; 
+    color: #ffffff;
+    /* float: right; */
+    display: block;
+  }
+  .navContainer.responsive {
+    display: flex;
+    flex-direction: column;
+  }
+  .navContainer.responsive nav.menuicon{
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navContainer.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+
+

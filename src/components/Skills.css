@@ -1,0 +1,102 @@
+.skContainer{ 
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; 
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; 
+    align-items: center;
+}
+  
+.text{
+    display: flex;
+    margin-bottom: 2rem; 
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+  
+.chipicon{
+    display: inline-block; 
+    margin-bottom: 1rem; 
+    width: 2.5rem; 
+}
+
+.sk_h1{
+    margin-bottom: 1rem; 
+    color: #ffffff; 
+    font-size: 1.875rem;
+    line-height: 2.25rem; 
+    font-weight: 500; 
+}
+
+@media (min-width: 640px) { 
+    .sk_h1{
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    } 
+    .skillmap{
+        margin-bottom: 0.5rem;
+    }
+    .smalldiv{
+        width: 50%;
+    }
+}
+
+.skPara{
+    font-size: 1rem;
+    line-height: 1.625;
+}
+
+@media (min-width: 1024px) { 
+    .skPara{
+        width: 75%;
+    } 
+    .skillmap{
+        width: 80%;
+    }
+}
+
+@media (min-width: 1280px) { 
+    .skPara{
+        width: 50%;
+    } 
+}
+
+.skillmap{ 
+    display: flex;
+    flex-direction: row;
+    /* margin-left: -0.5rem;
+    margin-right: -0.5rem; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
+}
+
+
+.smalldiv{
+    padding: 0.5rem; 
+    width: 400px; 
+}
+
+.skillbox{ 
+    padding: 1rem; 
+    background-color: #1F2937; 
+    align-items: center; 
+    height: 100%; 
+    border-radius: 0.25rem; 
+
+}
+
+.badgeicon{
+    margin-right: 1rem; 
+    color: #34D399; 
+    flex-shrink: 0; 
+    width: 1.5rem; 
+    height: 1.5rem;
+}
+
+.skSpan{
+    color: #ffffff; 
+    font-weight: 500; 
+}

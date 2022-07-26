@@ -1,0 +1,136 @@
+#projects{
+    /* background-color: #111827;  */
+    color: #9CA3AF; 
+}
+
+.projContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; 
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; 
+    text-align: center;
+    align-items: center; 
+}
+
+@media (min-width: 1024px) {
+    .projContainer{
+        padding-left: 10rem;
+        padding-right: 10rem; 
+        padding-bottom: 5rem;
+    }
+    #proj_p{
+        width: 66.666667%; 
+    }
+}
+
+.projSubcont{
+    display: flex; 
+    margin-bottom: 2rem; 
+    flex-direction: column; 
+    width: 100%; 
+    text-align: center;
+    align-items: center;
+}
+
+.codeicon{
+    display: inline-block; 
+    margin-bottom: 1rem; 
+    width: 2.5rem; 
+}
+
+h1{
+    margin-bottom: 1rem; 
+    color: #ffffff; 
+    font-size: 1.875rem;
+    line-height: 2.25rem; 
+    font-weight: 500; 
+}
+
+@media (min-width: 640px) { 
+    .h1{
+        font-size: 2.25rem;
+        line-height: 2.5rem; 
+    }
+    .link{
+        width: 40%;
+    }
+}
+
+#proj_p{
+    font-size: 1rem; 
+    line-height: 1.625; 
+}
+
+.boxes{
+    display: flex; 
+    /* margin-left: 6rem;  */
+    flex-wrap: wrap; 
+    /* width: auto;  */
+    justify-content: space-evenly;
+    /* background-color: yellow; */
+    justify-content: center;
+}
+
+.link{
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.imagebox{
+    display: flex; 
+    position: relative;
+}
+
+.pImg{
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+}
+
+.intros{
+    position: relative; 
+    z-index: 10; 
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem; 
+    background-color: #f7f7f7d8; 
+    width: 100%; 
+    border-width: 4px; 
+    border-color: #1F2937;
+    opacity: 0;
+    /* background-color: #9CA3AF; */
+}
+
+.intros:hover{
+    opacity: 1;
+}
+
+h2{
+    margin-bottom: 0.25rem; 
+    color: black; 
+    font-size: 0.875rem;
+    line-height: 1.25rem; 
+    font-weight: 500; 
+    letter-spacing: 0.1em; 
+}
+
+.p_h1{
+    margin-bottom: 0.75rem; 
+    color: #ea6059; 
+    font-size: 1.125rem;
+    line-height: 1.75rem; 
+    font-weight: 500; 
+}
+
+#projDesc{
+    line-height: 1.625;
+    color: #111827;
+} 
