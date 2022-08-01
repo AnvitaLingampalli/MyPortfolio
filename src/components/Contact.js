@@ -15,7 +15,7 @@ export default function Contact(){
     }
 
     function handleSubmit(e) {
-        e.preventDefault();
+
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -23,7 +23,9 @@ export default function Contact(){
         })
           .then(() => alert("Message sent!"))
           .catch((error) => alert(error));
-    }
+
+          e.preventDefault();
+    };
 
     return (
         <section id="contactpage">
@@ -65,7 +67,7 @@ export default function Contact(){
                         </div>
                     </div>                    
                 </div>
-                <form netlify name = "contact" className="contactform">
+                <form netlify name = "contact" className="contactform" onSubmit={handleSubmit}>
                     <h2 className="hire">
                         Hire Me
                     </h2>
