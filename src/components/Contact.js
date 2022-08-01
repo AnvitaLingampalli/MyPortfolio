@@ -67,7 +67,7 @@ export default function Contact(){
                         </div>
                     </div>                    
                 </div>
-                <form netlify name = "contact" className="contactform" onSubmit={handleSubmit}>
+                <form netlify name="contact" className="contactform" onSubmit={handleSubmit}>
                     <h2 className="hire">
                         Hire Me
                     </h2>
@@ -76,11 +76,13 @@ export default function Contact(){
                         suscipit officia aspernatur veritatis. Asperiores, aliquid?
                     </p>
 
+                    <input type="hidden" name="form-name" value="contact" />
+
                     <div className="formDivs">
                         <label htmlFor="name" className="formLabel">
                             Name
                         </label>
-                        <input type="text" id="inp" name="name"
+                        <input type="text" id="name" name="name" className="inp"
                             onChange={(e) => setName(e.target.value)}
                         />
                     </div>
@@ -89,7 +91,7 @@ export default function Contact(){
                         <label htmlFor="email" className="formLabel">
                             Email
                         </label>
-                        <input type="email" id="inp" name="email"
+                        <input type="email" id="email" name="email" className="inp"
                             onChange={(e) => setEmail(e.target.value)}
                         />
                     </div>
@@ -98,7 +100,7 @@ export default function Contact(){
                         <label htmlFor="message" className="formLabel">
                             Message
                         </label>
-                        <textarea id="msgL" name="message"
+                        <textarea id="message" name="message" className="inpL"
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </div>

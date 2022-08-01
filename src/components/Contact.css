@@ -150,7 +150,7 @@ iFrame{
     line-height: 1.75rem;
 }
 
-#inp{
+.inp{
     padding-top: 0.25rem;
     padding-bottom: 0.25rem; 
     padding-left: 0.75rem;
@@ -170,7 +170,7 @@ iFrame{
     outline: 0; 
 }
 
-#msgL{
+.inpL{
     padding-top: 0.25rem;
     padding-bottom: 0.25rem; 
     padding-left: 0.75rem;
