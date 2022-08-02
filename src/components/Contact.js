@@ -9,13 +9,13 @@ export default function Contact(){
     function encode(data) {
         return Object.keys(data)
           .map(
-            (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+            key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
           )
           .join("&");
     }
 
     function handleSubmit(e) {
-
+        e.preventDefault();
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -23,9 +23,7 @@ export default function Contact(){
         })
           .then(() => alert("Message sent!"))
           .catch((error) => alert(error));
-
-          e.preventDefault();
-    };
+    }
 
     return (
         <section id="contactpage">
@@ -56,7 +54,7 @@ export default function Contact(){
                                 EMAIL
                             </h2>
                             <a className="myEmail">
-                                reedbarger@email.com
+                                dummyEmail@email.com
                             </a>
                             <h2 className="infoHead">
                                 PHONE
@@ -67,7 +65,11 @@ export default function Contact(){
                         </div>
                     </div>                    
                 </div>
-                <form netlify name="contact" className="contactform" onSubmit={handleSubmit}>
+                <form netlify 
+                      name="contact" 
+                      className="contactform" 
+                      onSubmit={handleSubmit}
+                >
                     <h2 className="hire">
                         Hire Me
                     </h2>
