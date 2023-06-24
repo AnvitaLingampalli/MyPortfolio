@@ -13,9 +13,7 @@ export default function Skills(){
 	                Skills &amp; Technologies
 	            </h1> 
 	            <p className = "skPara">
-	                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi sit
-                    ipsa delectus eum quo voluptas aspernatur accusantium distinctio
-                    possimus est.
+	                Discover my diverse range of skills across programming languages, frameworks, databases, and tools.
 	            </p>
 	        </div>
 	        <div className="skillmap">

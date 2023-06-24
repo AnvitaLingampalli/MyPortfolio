@@ -10,10 +10,10 @@ export default function Projects(){
                 <div className="projSubcont">
                     <CodeIcon className="codeicon" />
                     <h1>
-                        My Past Projects
+                        My Projects
                     </h1>
                     <p id="proj_p">
-                        Dive deep into my projects to know more details and information!
+                        Dive into a dynamic collection of my projects for more information!
                     </p>
                 </div>
                 <div className="boxes">

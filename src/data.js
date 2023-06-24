@@ -34,5 +34,6 @@ export const projects = [
   ];
 
   export const skills = [
-    "JavaScript", "React", "Java", "HTML", "CSS", "C++", "C", "JavaFX" 
+    //"JavaScript", "React", "Java", "HTML", "CSS", "C++", "C", "JavaFX" 
+    "Java", "React", "Python", "Node.js", "C", "Express.js", "C++", "MySQL", "Swift", "XCode", "Kotlin", "Android Studio", "JavaScript", "PostgreSQL", "HTML", "AWS", "CSS", "SwiftUI", "JavaFX", "Netlify", "SQL", "GitHub"
   ];

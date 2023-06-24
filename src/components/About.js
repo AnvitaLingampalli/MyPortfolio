@@ -6,18 +6,19 @@ export default function About(){
         <section id="about">
             <div className="container">
                 <div className="hpb">
-                    <h1>Hi, I am Anvita
-                    <br/>Welcome to my portfolio!
+                    <h1>Hi, I am Anvita Lingampalli
+                    <br/>Welcome to My Portfolio!
                     </h1>
                     <p>
-                    I am a passionate programmer. I love coding, designing and building websites and web apps. 
+                    I am a passionate programmer and developer specializing in backend development.
+                    Explore my portfolio to see some of the projects I have worked on, showcasing my technical skills. 
                     </p>
                     <div className="twoButtons">
-                        <a href="#contact" id="contact">
+                        <a href="#contactpage" id="contact">
                            Contact Me
                         </a>
-                        <a href="#projectB" id="projectB">
-                            My projects
+                        <a href="#projects" id="projectB">
+                            My Projects
                         </a>
                     </div>
                 </div>
