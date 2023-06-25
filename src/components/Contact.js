@@ -45,8 +45,8 @@ export default function Contact(){
                                 ADDRESS
                             </h2>
                             <p className="infoP">
-                                ASU <br />
-                                Arizona, AZ 85281
+                                Arizona State University <br />
+                                Tempe, AZ 85281
                             </p>
                         </div>
                         <div className="personal">
@@ -54,13 +54,13 @@ export default function Contact(){
                                 EMAIL
                             </h2>
                             <a className="myEmail">
-                                dummyEmail@email.com
+                                lingampallianvita01@gmail.com
                             </a>
                             <h2 className="infoHead">
                                 PHONE
                             </h2>
                             <p className="number">
-                                0123-456-789
+                                +1 (480) 749-0868
                             </p>
                         </div>
                     </div>                    
@@ -71,11 +71,10 @@ export default function Contact(){
                       onSubmit={handleSubmit}
                 >
                     <h2 className="hire">
-                        Hire Me
+                        Contact Me
                     </h2>
                     <p className="hireP">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                        suscipit officia aspernatur veritatis. Asperiores, aliquid?
+                        Feel free to reach out and get in touch with me directly to discuss potential opportunities - I'm just a message away!
                     </p>
 
                     <input type="hidden" name="form-name" value="contact" />
