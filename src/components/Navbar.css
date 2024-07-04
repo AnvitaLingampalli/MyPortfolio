@@ -1,108 +1,132 @@
+:root {
+  --primary-color: #1F2937;
+  --secondary-color: lightgray;
+  --highlight-color: rgb(239, 151, 151);
+  --hover-background: #374151;
+  --gradient-background: linear-gradient(to bottom, #1d1e20, #1F2937);
+}
+
 .header{
+    position: sticky;
     top: 0;
     z-index: 9999999;
-    background-color: #1F2937; 
+    /* background-color: #1F2937;  */
+    background: var(--gradient-background); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navContainer{
     display: flex; 
-    padding: 1.25rem; 
+    /* padding: 1.25rem;  */
+    padding: 0;
     flex-direction: row;
-    flex-wrap: wrap; 
-    align-items: baseline;
-    justify-content: right;
+    /* flex-wrap: wrap;  */
+    /* align-items: baseline; */
+    align-items: center;
+    /* justify-content: right; */
+    justify-content: space-between;
+    height: 50px; 
+    /* height: 100%; */
 }
 
 
-.navLink{
-    margin-bottom: 1rem; 
-    color: #ffffff; 
+/* .navLeft{
+    /* margin-bottom: 1rem;  */
+    /* color: #ffffff; 
     font-weight: 500; 
+    height: 100%;
+} */
+
+.navLeft{
+  /* margin-bottom: 1rem;  */
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.me{
+/* .me{
     margin-left: 0.75rem; 
     font-size: 1.25rem;
     line-height: 1.75rem; 
     text-decoration: none;
     color: lightgray;
-}
+} */
 /* rgb(248, 135, 135) */
 
-.onlyB{
+/* .onlyB{
   display: inline-flex;
   margin-left: auto;
+} */
+
+.navRight{
+  /* margin-bottom: 1rem;  */
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.nav{
+
+/* .nav{
     display: flex; 
     font-size: 1rem;
     line-height: 1.5rem; 
     flex-wrap: wrap; 
     justify-content: center; 
     align-items: center; 
-}
-
+} */
+.navName, 
 .navButtons{
     margin-left: 1rem;
     margin-right: 1rem;
     text-decoration: none;
-    color: lightgrey;
+    /* color: lightgrey; */
+    color: var(--secondary-color);
+    transition: color 0.3s ease, background-color 0.3s ease;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
 }
 
-.navButtons:hover{
-    color: rgb(239, 151, 151);
+.navName:hover, 
+.navButtons:hover, .active{
+    /* color: rgb(239, 151, 151); */
+    color: var(--highlight-color);
+    /* background-color: var(--highlight-color); */
+    /* animation: hoverColor 0.3s forwards; */ 
 }
 
-@media(min-width: 768px){
-    .header{
-      position: sticky;
-    }
-    .navContainer{
-      flex-direction: row;
-    }
-    .navLink{
-      margin-bottom: 0;
-    }
-    .nav{
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem; 
-      padding-left: 1rem; 
-      margin-left: 1rem; 
-      border-left-width: 1px; 
-    }
-    .contactLink{
-      margin-top: 0; 
-    }
-}
-
-.contactLink{
+/* .contactLink{
   display: inline-flex; 
   padding-top: 0.25rem;
   padding-bottom: 0.25rem; 
   padding-left: 0.75rem;
   padding-right: 0.75rem; 
   /* margin-top: 1rem;  */
-  background-color: #1F2937; 
-  font-size: 1rem;
+  /* background-color: #1F2937;  */
+  /* font-size: 1rem;
   line-height: 1.5rem; 
   align-items: center; 
   border-radius: 0.25rem; 
   border-width: 0; 
-  text-decoration: none;
-  color: lightgrey;
-}
+  text-decoration: none; */
+  /* color: lightgrey; */
+  /* color: var(--secondary-color);
+  transition: background-color 0.3s ease; */
+/* } */
 
-.contactLink:hover{
+/* .contactLink:hover{
   background-color: #374151; 
-}
+} */
 
-.hireButton{
+/* .contactLink:hover {
+  background-color: var(--hover-background);
+} */
+
+/* .hireButton{
   margin-left: 0.25rem; 
   width: 1rem; 
   height: 1rem;
 
-}
+} */
 
 .menuNav{
   display: inline-flex;
@@ -110,6 +134,28 @@
 }
 .menuicon{
     display: none;
+}
+
+@media(min-width: 768px){
+  .header{
+    position: sticky;
+  }
+  .navContainer{
+    flex-direction: row;
+  }
+  .navLink{
+    margin-bottom: 0;
+  }
+  .nav{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem; 
+    padding-left: 1rem; 
+    margin-left: 1rem; 
+    border-left-width: 1px; 
+  }
+  .contactLink{
+    margin-top: 0; 
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -151,5 +197,11 @@
 
 }
 
-
-
+@keyframes hoverColor {
+  from {
+      background-color: transparent;
+  }
+  to {
+      background-color: var(--highlight-color);
+  }
+}
