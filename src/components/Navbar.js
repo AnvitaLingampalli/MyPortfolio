@@ -14,34 +14,39 @@ export default function Navbar(){
     //     }
     // }
 
-    // useEffect(() => {
+    useEffect(() => {
         const sections = document.querySelectorAll("section");
-        console.log("sections = ", sections)
+        console.log(sections)
         const navLinks = document.querySelectorAll(".navButtons, .navName");
-        console.log("links = ", navLinks)
-
-        function activeSection(){
+        console.log(navLinks)
+        const handleScroll = ()=> {
             let current = "";
 
-            sections.forEach((section) => {
+            sections.forEach(section => {
                 const sectionTop = section.offsetTop;
                 const sectionHeight = section.clientHeight;
 
                 if (window.scrollY >= sectionTop - sectionHeight / 3){
                     current = section.getAttribute("id");
                 }
-            });
-
-            console.log("current", current)
-            navLinks.forEach((link) => {
+            })
+            console.log("curr", current)
+            navLinks.forEach(link => {
                 link.classList.remove("active");
                 if (link.getAttribute("href").includes(current)) {
                     link.classList.add("active");
                 }
             });
-        }
+        };
 
-        window.addEventListener("scroll", activeSection);
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+          };
+        }, []);
+
+        
         
 
     //     return () => {
@@ -55,7 +60,7 @@ export default function Navbar(){
             <nav className="navContainer" id="theNav">
                 <div className="navLeft"> {/*navleft */}
                     {/* <a href="#about" className="me"> */}
-                    <a href="#about" className="navName"> {/*className="navButtons"*/}
+                    <a href="#about" className="navName active"> {/*className="navButtons"*/}
                     Anvita
                     </a>
                 </div>

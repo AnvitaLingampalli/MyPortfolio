@@ -5,7 +5,7 @@ export default function About(){
     return(
         <section id="about">
             <div className="container">
-                <div className="hpb">
+                <div className="details">
                     <h1>Hi, I am Anvita Lingampalli
                     <br/>Welcome to My Portfolio!
                     </h1>
@@ -24,7 +24,6 @@ export default function About(){
                 </div>
                 <div className="myImage">
                     <img className="mypic" alt="animated picture" src="./myPic.jpg"/>
-                    
                 </div>
             </div>
 

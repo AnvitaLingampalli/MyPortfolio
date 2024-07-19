@@ -1,55 +1,101 @@
-/* #about{
-    justify-content: space-evenly;
-     background-color: #374151;
-} */
+#about{
+    padding: 2rem;
+}
 
 .container{
     display: flex;
-    /* padding-left: 2.5rem;
-    padding-right: 2.5rem; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding-left: 10rem;
     padding-right: 10rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    flex-direction: column;
-    align-items: center;
+}
+
+.details{
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 4rem; 
+    text-align: left; 
+    max-width: 500px;
+    gap: 1rem;
+}
+
+/* .myImage{
+    margin-left: 120px;
+} */
+
+.myImage{
+    display: flex;
     justify-content: center;
 }
 
-.hpb{
-    display: flex; 
-    margin-bottom: 4rem; 
-    text-align: left; 
-    flex-direction: column; 
-    align-items: flex-start; 
-    max-width: 500px;
-}
-
-@media(min-width: 768px){
-    .container{
-        flex-direction: row;
-    }
-    .hbp{
-        padding-right: 4rem; 
-        margin-bottom: 0; 
-        text-align: left; 
-        align-items: flex-start; 
-        width: 50%;
-    }
-    .myImage{
-        width: 50%; 
-    }
-}
-
-@media (min-width: 1024px) { 
-    .hbp{
-        padding-right: 6rem; 
-        flex-grow: 1; 
-    }
-    /* .myImage{
-        width: 100%; 
-        max-width: 32rem; 
+/* .mypic{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 0.25rem; 
+    /* margin-left: 50px; 
     } */
+
+.mypic{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover; 
+    object-position: center; 
+    border-radius: 5%; 
+    min-width: 300px;
+}
+
+.twoButtons{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.twoButtons a{
+    margin: 0.1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+    line-height: 1.75rem; 
+    border-radius: 0.25rem;
+}
+
+#contact{
+    /* display: inline-flex;  */
+     
+    background-color: rgb(245, 134, 134); 
+    color: #ffffff; 
+     
+    /* border-width: 0;  */ 
+}
+
+#contact:hover {
+    background-color: rgb(251, 155, 155); 
+}
+
+#projectB{
+    /* display: inline-flex; 
+    
+    margin-left: 1rem;  */
+    background-color: #1F2937; 
+    color: #9CA3AF; 
+
+    /* border-width: 0;  */
+    
+}
+
+#projectB:hover{
+    background-color: #374151; 
+    color: #ffffff; 
 }
 
 h1{
@@ -57,7 +103,36 @@ h1{
     color: #ffffff; 
     font-size: 1.875rem;
     line-height: 2.25rem; 
-    font-weight: 500; 
+    font-weight: 500;
+    width: 100%;
+}
+
+@media(min-width: 768px){
+    .container{
+        flex-direction: row;
+    }
+    .details{
+        padding-right: 4rem; 
+        margin-bottom: 0; 
+        /* text-align: left;  */
+        /* align-items: flex-start;  */
+        width: 50%;
+    }
+    .myImage{
+        width: 50%; 
+        margin-left: 2rem;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .details{
+        padding-right: 6rem; 
+        flex-grow: 1; 
+    }
+
+    .mypic{
+        max-width: 32rem;
+    }
 }
 
 @media (min-width: 640px) { 
@@ -70,62 +145,9 @@ h1{
 p{
     margin-bottom: 2rem;
     line-height: 1.625;
+    /* width: 100%; */
 }
 
-.twoButtons{
-    display: flex;
-    justify-content: center;
-}
 
-#contact{
-    display: inline-flex; 
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; 
-    background-color: rgb(245, 134, 134); 
-    color: #ffffff; 
-    font-size: 1.125rem;
-    line-height: 1.75rem; 
-    border-radius: 0.25rem; 
-    border-width: 0; 
-    text-decoration: none;
-}
 
-#contact:hover {
-    background-color: rgb(251, 155, 155); 
-}
 
-#projectB{
-    display: inline-flex; 
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; 
-    padding-left: 1.5rem;
-    padding-right: 1.5rem; 
-    margin-left: 1rem; 
-    background-color: #1F2937; 
-    color: #9CA3AF; 
-    font-size: 1.125rem;
-    line-height: 1.75rem; 
-    border-radius: 0.25rem; 
-    border-width: 0; 
-    text-decoration: none;
-}
-
-#projectB:hover{
-    background-color: #374151; 
-    color: #ffffff; 
-}
-
-.myImage{
-    margin-left: 120px;
-}
-
-.mypic{
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; 
-    object-position: center; 
-    border-radius: 0.25rem; 
-    /* margin-left: 50px; */
-}
